@@ -1,16 +1,18 @@
 import React from "react";
 import "./Login.scss";
-import Checkbox from "@mui/material/Checkbox";
 import TextInput from "../../components/TextInput/TextInput";
 import LoginBtn from "../../components/LoginBtn/LoginBtn";
+
+import Favicon from "../../assets/favicon.png";
 import LoginBg from "../../assets/background.png";
+import { FormControl, Checkbox } from "@mui/material";
 
 function Login() {
   return (
     <div className="container">
       <div className="login">
         <div className="login__brand">
-          <img src="./favicon.png" width={"45px"} />
+          <img src={Favicon} width={"60px"} />
           <h1>SkyEdge</h1>
         </div>
 
@@ -20,7 +22,7 @@ function Login() {
             <p>Please enter your details</p>
           </div>
 
-          <form action="">
+          <FormControl required>
             <TextInput
               id={"outlined-password-input"}
               label={"Email"}
@@ -49,7 +51,7 @@ function Login() {
             <div className="signup-option">
               Don't have an account? <a href="/signup">Sign up</a>
             </div>
-          </form>
+          </FormControl>
         </div>
       </div>
 

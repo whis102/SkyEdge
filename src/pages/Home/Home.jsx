@@ -12,7 +12,6 @@ function Home() {
           boxShadow: 0,
           bgcolor: "transparent",
           backgroundImage: "none",
-          mt: 2,
         }}
       >
         <TopNav />

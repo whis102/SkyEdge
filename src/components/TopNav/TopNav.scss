@@ -1,5 +1,5 @@
 .top-nav {
-  background-color: #212529;
+  background-color: #404345;
   display: flex;
   justify-content: space-between;
   padding: 0 5em;
@@ -11,5 +11,11 @@
     p {
       padding: 0 6px;
     }
+  }
+}
+
+@media (max-width: 780px) {
+  .top-nav {
+    display: none;
   }
 }

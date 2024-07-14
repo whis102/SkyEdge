@@ -1,75 +1,83 @@
 $brand-color: #1976d2;
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .login {
+  width: 50%;
+
+  .login__brand {
+    display: flex;
+    position: absolute;
+    left: 50;
+
+    h1 {
+      color: $brand-color;
+    }
+  }
+
+  .login__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    align-items: center;
 
-    .login__brand {
-        display: flex;
-        flex-direction: column;
+    .login__title {
+      padding: 16px;
+      margin: 16px;
+      text-align: center;
 
-        h1 {
-            color: $brand-color;
-        }
+      h1 {
+        color: $brand-color;
+      }
     }
 
-    .login__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .login__title {
-            padding: 16px;
-            margin: 16px;
-            text-align: center;
-
-            h1 {
-                color: $brand-color;
-            }
-        }
-
-        .options {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        .signup-option {
-            display: flex;
-            justify-content: center;
-        }
-
-        a {
-            display: flex;
-            text-decoration: none;
-            align-items: center;
-        }
+    .options {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
+
+    .signup-option {
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+    }
+  }
 }
 
 .box-input {
-    margin: 10px;
+  margin: 10px;
 }
 
 .login__image {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  align-items: center;
 
-    img {
-        width: 100%;
-        height: auto;
-        max-height: 100vh;
-        object-fit: cover;
-    }
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .login {
+    width: 100%;
+  }
+
+  .login__image {
+    display: none;
+  }
 }
